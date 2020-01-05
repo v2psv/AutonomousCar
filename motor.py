@@ -28,10 +28,10 @@ class Motor:
     def run(self, signal):
         if signal == 'F':
             self.forward()
-            self.change_speed(70)
-        if signal == 'B':
+            self.change_speed(80)
+        elif signal == 'B':
             self.backward()
-            self.change_speed(70)
+            self.change_speed(80)
         elif signal == 'L':
             self.left()
         elif signal == 'R':
